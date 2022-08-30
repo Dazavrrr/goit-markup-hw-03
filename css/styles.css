@@ -120,13 +120,13 @@ li {
 
 .hero-title.centered,
 .pictures-title.centered,
-.team-title.centered {
+.team-title.centered,
+.btn.centered {
   text-align: center;
 }
 
 .hero-title {
   padding-top: 200px;
-  padding-bottom: 230px;
   padding-right: 310px;
   padding-left: 310px;
 
@@ -149,7 +149,10 @@ li {
   letter-spacing: 0.06em;
 
   padding: 10px 32px;
-  margin-left: 480px;
+  margin-left: 495px;
+  margin-right: 495px;
+  margin-top: 5px;
+  margin-bottom: 200px;
 }
 
 .button:hover,
@@ -187,7 +190,7 @@ li {
 /*Advantages*/
 .feature-list {
   display: flex;
-  padding-top: 94px;
+  margin-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -209,10 +212,8 @@ li {
 }
 
 /* Pictures */
-
 .pictures {
   display: flex;
-  /* margin-right: 30px; */
   justify-content: center;
 }
 
@@ -330,7 +331,6 @@ li {
 
 /*Buttons*/
 .button {
-  display: flex;
   background-color: var(--team-background-color);
   color: var(--logo-color);
   font-size: 16px;
@@ -338,12 +338,40 @@ li {
   line-height: 1.6;
   letter-spacing: 0.03em;
   padding: 6px 22px;
+  margin-right: 8px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color);
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+
+.project-card-1,
+.project-card-2,
+.project-card-3,
+.project-card-4,
+.project-card-5,
+.project-card-6,
+.project-card-7,
+.project-card-8,
+.project-card-9 {
+  border: 1px solid var(--button-background-color);
+  width: 370px;
+  margin: 8px;
 }
 
 .project-title {
@@ -359,4 +387,10 @@ li {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
+  padding-bottom: 20px;
+}
+
+.project-title,
+.project-description {
+  padding-left: 24px;
 }
