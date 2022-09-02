@@ -15,19 +15,23 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сторінки -->
     <header class="header">
-      <div class="header-container">
-        <nav class="container">
+      <div class="container">
+        <nav class="header-container">
           <a class="logo" href="index.html"><span>Web</span>Studio</a>
 
-          <ul class="site-nav">
-            <li class="link"><a href="index.html">Студія</a></li>
-            <li class="link"><a href="portfolio.html">Портфоліо</a></li>
-            <li class="link"><a href="">Контакти</a></li>
+          <ul class="site-nav list">
+            <li><a class="link" href="index.html">Студія</a></li>
+            <li><a class="link" href="portfolio.html">Портфоліо</a></li>
+            <li><a class="link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="address-nav">
@@ -43,87 +47,101 @@
 
     <!-- Портфоліо -->
     <main>
-      <div class="container">
-        <section>
+      <section>
+        <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <div>
-            <ul class="button-list">
-              <li>
-                <button class="button" type="button">Усі</button>
-              </li>
-              <li>
-                <button class="button" type="button">Веб-сайти</button>
-              </li>
-              <li>
-                <button class="button" type="button">Додатки</button>
-              </li>
-              <li>
-                <button class="button" type="button">Дизайн</button>
-              </li>
-              <li>
-                <button class="button" type="button">Маркетинг</button>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <h2 class="visually-hidden">Проєкти</h2>
-          <ul class="project-cards">
-            <li class="project-card-1">
-              <img src="./images/project1.jpg" alt="Технокряк" />
-              <h3 class="project-title">Технокряк</h3>
-              <p class="project-description">Веб-сайт</p>
+          <ul class="buttons-list">
+            <li class="button-list">
+              <button class="button" type="button">Усі</button>
             </li>
-            <li class="project-card-2">
+            <li class="button-list">
+              <button class="button" type="button">Веб-сайти</button>
+            </li>
+            <li class="button-list">
+              <button class="button" type="button">Додатки</button>
+            </li>
+            <li class="button-list">
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li class="button-list">
+              <button class="button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <h2 class="visually-hidden">Проєкти</h2>
+          <ul class="project-cards list">
+            <li class="project-card">
+              <img src="./images/project1.jpg" alt="Технокряк" />
+              <div class="project-text">
+                <h3 class="project-title">Технокряк</h3>
+                <p class="project-description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-card">
               <img
                 src="./images/project2.jpg"
                 alt="Постер New Orlean vs Golden Star"
               />
-              <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
-              <p class="project-description">Дизайн</p>
+              <div class="project-text">
+                <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
+                <p class="project-description">Дизайн</p>
+              </div>
             </li>
-            <li class="project-card-3">
+            <li class="project-card">
               <img src="./images/project3.jpg" alt="Ресторан Seafood" />
-              <h3 class="project-title">Ресторан Seafood</h3>
-              <p class="project-description">Додаток</p>
+              <div class="project-text">
+                <h3 class="project-title">Ресторан Seafood</h3>
+                <p class="project-description">Додаток</p>
+              </div>
             </li>
-            <li class="project-card-4">
+            <li class="project-card">
               <img src="./images/project4.jpg" alt="Проєкт Prime" />
-              <h3 class="project-title">Проєкт Prime</h3>
-              <p class="project-description">Маркетинг</p>
+              <div class="project-text">
+                <h3 class="project-title">Проєкт Prime</h3>
+                <p class="project-description">Маркетинг</p>
+              </div>
             </li>
-            <li class="project-card-5">
+            <li class="project-card">
               <img src="./images/project5.jpg" alt="Проєкт Boxes" />
-              <h3 class="project-title">Проєкт Boxes</h3>
-              <p class="project-description">Додаток</p>
+              <div class="project-text">
+                <h3 class="project-title">Проєкт Boxes</h3>
+                <p class="project-description">Додаток</p>
+              </div>
             </li>
-            <li class="project-card-6">
+            <li class="project-card">
               <img
                 src="./images/project6.jpg"
                 alt="Inspiration has no Borders"
               />
-              <h3 class="project-title">Inspiration has no Borders</h3>
-              <p class="project-description">Веб-сайт</p>
+              <div class="project-text">
+                <h3 class="project-title">Inspiration has no Borders</h3>
+                <p class="project-description">Веб-сайт</p>
+              </div>
             </li>
-            <li class="project-card-7">
+            <li class="project-card">
               <img src="./images/project7.jpg" alt="Видання Limited Edition" />
-              <h3 class="project-title">Видання Limited Edition</h3>
-              <p class="project-description">Дизайн</p>
+              <div class="project-text">
+                <h3 class="project-title">Видання Limited Edition</h3>
+                <p class="project-description">Дизайн</p>
+              </div>
             </li>
-            <li class="project-card-8">
+            <li class="project-card">
               <img src="./images/project8.jpg" alt="Проєкт LAB" />
-              <h3 class="project-title">Проєкт LAB</h3>
-              <p class="project-description">Маркетинг</p>
+              <div class="project-text">
+                <h3 class="project-title">Проєкт LAB</h3>
+                <p class="project-description">Маркетинг</p>
+              </div>
             </li>
-            <li class="project-card-9">
+            <li class="project-card">
               <img src="./images/project9.jpg" alt="Growing Business" />
-              <h3 class="project-title">Growing Business</h3>
-              <p class="project-description">Додаток</p>
+              <div class="project-text">
+                <h3 class="project-title">Growing Business</h3>
+                <p class="project-description">Додаток</p>
+              </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- Підвал сторінки -->
@@ -131,9 +149,9 @@
       <div class="container">
         <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
 
-        <address>
-          <ul>
-            <li class="address-map">
+        <address class="footer-address">
+          <ul class="list">
+            <li class="address address-map">
               <a
                 href="https://goo.gl/maps/eL6SmzWhfSrUjgz5A"
                 target="_blank"
