@@ -86,11 +86,6 @@ section {
   align-items: center;
 }
 
-/* div.container {
-  display: flex;
-  align-items: center;
-} */
-
 /*Logo*/
 .logo {
   font-family: "Raleway";
@@ -372,11 +367,6 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-/* .footer-nav {
-  display: block;
-  text-align: left;
-} */
 
 .footer-logo {
   font-family: "Raleway";
